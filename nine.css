@@ -10,6 +10,69 @@ body{
    justify-content: center;
    
 }
+.switch {
+    position: relative;
+    display: inline-block;
+   
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background-color: rgb(50, 50, 51);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    bottom:0px;
+    right:2px;
+    background-color:white;
+   border:1px solid orangered;
+    -webkit-transition: .01s;
+    transition: .01s;
+  }
+  
+  input:checked + .slider {
+    background-color: orangered;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #121212;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 .container{
     text-align: center;
@@ -29,13 +92,35 @@ body{
    font-size: 10px;
    
 }
+#head{
+    display: flex;
+}
+#head P{
+    padding-left: 67%;
+    font-size: 12px;
+    padding-top: 12px;
+    color: #5a5a5e;
+}
+#head h4{
+        font-size: 12px;
+        font-weight: lighter;
+        color: #5a5a5e;
+}
+#head h5{
+    font-size: 11px;
+        font-weight: lighter;
+        padding-top: 11px;
+        padding-left: 2px;
+}
 .box h2{
     margin-top: 5px;
+    font-weight: lighter;
 }
 .box h6{
     margin-top:-15px ;
-    font-size: 13px;
+    font-size: 15px;
     color: rgb(165, 158, 158);
+    font-weight: lighter;
 }
 .box h4{
    padding-left: 2%;
@@ -45,7 +130,7 @@ body{
 }
 .box{
     background-color: #121212;
-    height: 550px;
+    height: 570px;
    
     padding-left: 2%;
     padding-right: 2%;
@@ -70,6 +155,8 @@ body{
 .box2 h5{
     text-align: left;
     padding-left:15px;
+    font-weight: lighter;
+        font-size: 16px;
 }
 .box3{
     display:flex;
@@ -115,33 +202,33 @@ body{
 .button1{
     display: flex;
    
-    margin-top: 40%;  
+    margin-top: 250px;  
    
 }
 .button1 p{
     
     
     background-color:#121212;
-    color:white;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-left: 1%;
-    
+    color:#5a5a5e;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 2%;
+   margin-top: 30px; 
     border: 1px solid #121212;
-    
+ 
     padding-left: 8px;
     
 }
 .button1 h3{
     border:1px solid black;
-    padding-left:3%;
-    padding-right: 3%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding-left:5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     border-radius: 8px;
-    font-weight: bold;
-    font-size: 20px;
-    background-color:orangered;
+    font-weight:lighter;
+    font-size: 15px;
+    background-color: orangered;
     color:white;
     margin-left:70%;
     margin-right: 2%;
@@ -149,7 +236,6 @@ body{
 
     
 }
-
  @media (min-width:835px) and (max-width:1536px){
     body{
         margin:0;
@@ -184,11 +270,13 @@ body{
     }
     .box h2{
         margin-top: 5px;
+        font-weight: lighter;
     }
     .box h6{
         margin-top:-15px ;
-        font-size: 13px;
+        font-size: 15px;
         color: rgb(165, 158, 158);
+        font-weight: lighter;
     }
     .box h4{
        padding-left: 2%;
@@ -198,7 +286,7 @@ body{
     }
     .box{
         background-color: #121212;
-        height: 550px;
+        height: 570px;
        
         padding-left: 2%;
         padding-right: 2%;
@@ -223,6 +311,8 @@ body{
     .box2 h5{
         text-align: left;
         padding-left:15px;
+        font-weight: lighter;
+        font-size: 16px;
     }
     .box3{
         display:flex;
@@ -230,6 +320,7 @@ body{
        
     
     }
+    
     .box3 label{
         margin-left: -75%;
         
@@ -268,40 +359,39 @@ body{
     .button1{
         display: flex;
        
-        margin-top: 40%;  
+        margin-top: 250px;  
        
     }
     .button1 p{
         
         
         background-color:#121212;
-        color:white;
-        font-size: 20px;
-        font-weight: bolder;
-        margin-left: 1%;
-        
+        color:#5a5a5e;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 2%;
+       margin-top: 30px; 
         border: 1px solid #121212;
-        
+     
         padding-left: 8px;
         
     }
     .button1 h3{
         border:1px solid black;
-        padding-left:3%;
-        padding-right: 3%;
-        padding-top: 0.5%;
-        padding-bottom: 0.5%;
+        padding-left:5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
         border-radius: 8px;
-        font-weight: bold;
-        font-size: 20px;
-        background-color:orangered;
+        font-weight:lighter;
+        font-size: 15px;
+        background-color: orangered;
         color:white;
         margin-left:70%;
         margin-right: 2%;
         
-    
-        
     }
+        
 }
 @media (min-width:600px) and (max-width:835px){
 
@@ -326,6 +416,9 @@ body{
     
     
 }
+.box{
+    background-color: black;
+}
 .box h4{
     padding-top: 2%;
     font-size: 10px;
@@ -341,6 +434,26 @@ body{
 .box h2{
     margin-top: 5px;
     text-align: left;
+}
+#head{
+    display: flex;
+}
+#head P{
+    padding-left: 67%;
+    font-size: 12px;
+    padding-top: 12px;
+    color: #5a5a5e;
+}
+#head h4{
+        font-size: 12px;
+        font-weight: lighter;
+        color: #5a5a5e;
+}
+#head h5{
+    font-size: 11px;
+        font-weight: lighter;
+        padding-top: 11px;
+        padding-left: 2px;
 }
 .box h6{
     margin-top:-15px ;
@@ -377,12 +490,16 @@ body{
 .box2 h5{
     text-align: left;
     padding-left:10px;
-    font-size: 15px;
+    font-weight: lighter;
+    font-size: 16px;
 }
 .box3{
     text-align: left;
     
 }
+
+
+
 
 .box3 label{
     margin-left: 1%;
@@ -419,48 +536,51 @@ body{
 
 .button1{
     display: flex;
-    background-color: #121212;  
-    margin-top:44vh;
-    /* margin-top:16.5vh;  */
+    background-color: #121212; 
+    margin-top:32vh; 
     margin-right: -5.8vw;
-    margin-left: -5.8vw;
-    
-    
+    margin-left: -8vw;
+    padding-left: 1vw;
     position:sticky;
     bottom: 0px;  
 }
 .button1 p{
-    
-    
-    background-color:#121212;
+        
+        
+    background-color:#2a2a2c;
     color:white;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-left: 1%;
-    
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 25px;
+    margin-top: 30px; 
     border: 1px solid #121212;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
     
-    padding-left: 8px;
     
 }
 .button1 h3{
     border:1px solid black;
-    padding-left:3%;
-    padding-right: 3%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-radius: 8px;
-    font-weight: bold;
-    font-size: 20px;
-    
-    background-color:orangered;
+    font-weight:lighter;
+    font-size: 15px;
+    background-color: orangered;
     color:white;
-    margin-left:70%;
-    margin-right: 2%;
+    margin-left:auto;
+    margin-right: 25px;
+    margin-top: 30px; 
+    
     
 
     
- } 
+}
 }
 @media (min-width:450px) and (max-width:600px){
 
@@ -485,6 +605,9 @@ body{
     
     
 }
+.box{
+    background-color: black;
+}
 .box h4{
     padding-top: 2%;
     font-size: 10px;
@@ -536,7 +659,8 @@ body{
 .box2 h5{
     text-align: left;
     padding-left:10px;
-    font-size: 15px;
+    font-weight: lighter;
+    font-size: 16px;
 }
 .box3{
     text-align: left;
@@ -575,51 +699,56 @@ body{
 .container img{
     width: 20%;
 }
-
-.button1{
-    display: flex;
-    background-color: #121212;  
-    margin-top:44vh;
-    /* margin-top:16.5vh;  */
-    margin-right: -5.8vw;
-    margin-left: -5.8vw;
-    
-    padding-right: 10%;
-    position:sticky;
-    bottom: 0px;  
-}
 .button1 p{
-    
-    
-    background-color:#121212;
+        
+        
+    background-color:#2a2a2c;
     color:white;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-left: 1%;
-    
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 25px;
+    margin-top: 30px; 
     border: 1px solid #121212;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
     
-    padding-left: 8px;
     
 }
 .button1 h3{
     border:1px solid black;
-    padding-left:8px;
-   padding-right: 8px;
-   padding-top: 2px;
-   padding-bottom: 2px;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-radius: 8px;
-    font-weight: bold;
-    font-size: 20px;
-    
+    font-weight:lighter;
+    font-size: 15px;
     background-color: orangered;
     color:white;
-    margin-left:70%;
-    margin-right: 2%;
+    margin-left:auto;
+    margin-right: 25px;
+    margin-top: 30px; 
+    
     
 
     
- } 
+}
+.button1{
+    display: flex;
+    background-color: #121212; 
+    margin-top:32vh; 
+    margin-right: -9vw;
+    margin-left: -8vw;
+    padding-left: 1vw;
+    
+    position:sticky;
+    bottom: 0px;  
+}
+
+
 }
 @media (min-width:350px) and (max-width:450px){
      
@@ -643,6 +772,29 @@ body{
     margin-top:4%;
     
     
+}
+.box{
+    background-color: black;
+}
+#head{
+    display: flex;
+}
+#head P{
+    padding-left: 67%;
+    font-size: 12px;
+    padding-top: 12px;
+    color: #5a5a5e;
+}
+#head h4{
+        font-size: 12px;
+        font-weight: lighter;
+        color: #5a5a5e;
+}
+#head h5{
+    font-size: 11px;
+        font-weight: lighter;
+        padding-top: 8px;
+        padding-left: 2px;
 }
 .box h4{
     padding-top: 2%;
@@ -695,7 +847,8 @@ body{
 .box2 h5{
     text-align: left;
     padding-left:10px;
-    font-size: 15px;
+    font-weight: lighter;
+    font-size: 16px;
 }
 .box3{
     text-align: left;
@@ -735,50 +888,55 @@ body{
     width: 40%;
 }
 
-.button1{
-    display: flex;
-    background-color: #121212;  
-    margin-top:44vh;
-    /* margin-top:16.5vh;  */
-    margin-right: -5.8vw;
-    margin-left: -5.8vw;
-    
-    padding-right: 20%;
-    position:sticky;
-    bottom: 0px;  
-}
 .button1 p{
-    
-    
-    background-color:#121212;
+        
+        
+    background-color:#2a2a2c;
     color:white;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-left: 1%;
-    
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 25px;
+    margin-top: 30px; 
     border: 1px solid #121212;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
     
-    padding-left: 8px;
     
 }
 .button1 h3{
     border:1px solid black;
-    padding-left:8px;
-   padding-right: 8px;
-   padding-top: 2px;
-   padding-bottom: 2px;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-radius: 8px;
-    font-weight: bold;
-    font-size: 20px;
-    
+    font-weight:lighter;
+    font-size: 15px;
     background-color: orangered;
     color:white;
-    margin-left:70%;
-    margin-right: 2%;
+    margin-left:auto;
+    margin-right: 25px;
+    margin-top: 30px; 
+    
     
 
     
- } 
+}
+.button1{
+    display: flex;
+    background-color: #121212; 
+    margin-top:32vh; 
+    margin-right: -9vw;
+    margin-left: -8vw;
+    padding-left: 1vw;
+    
+    position:sticky;
+    bottom: 0px;  
+}
+
 } 
 @media (min-width:270px) and (max-width:350px){
      
@@ -802,6 +960,9 @@ body{
    margin-top:4%;
    
    
+}
+.box{
+    background-color: black;
 }
 .box h4{
    padding-top: 2%;
@@ -831,6 +992,26 @@ body{
    
    
 }
+#head{
+    display: flex;
+}
+#head P{
+    padding-left: 67%;
+    font-size: 12px;
+    padding-top: 12px;
+    color: #5a5a5e;
+}
+#head h4{
+        font-size: 12px;
+        font-weight: lighter;
+        color: #5a5a5e;
+}
+#head h5{
+    font-size: 11px;
+        font-weight: lighter;
+        padding-top: 6px;
+        padding-left: 2px;
+}
 #id{
    background-color: black;
   margin-left: 2%;
@@ -854,7 +1035,8 @@ body{
 .box2 h5{
    text-align: left;
    padding-left:10px;
-   font-size: 15px;
+   font-weight: lighter;
+   font-size: 16px;
 }
 .box3{
    text-align: left;
@@ -895,51 +1077,56 @@ body{
 }
 
 .button1{
-   display: flex;
-   background-color: #121212;  
-   margin-top:44vh;
-   /* margin-top:16.5vh;  */
+    display: flex;
+    background-color: #121212; 
+    margin-top:32vh; 
     margin-right: -5.8vw;
-    margin-left: -5.8vw;
-   
-   padding-right: 40%;
-   position:sticky;
-   bottom: 0px;  
+    margin-left: -8vw;
+    padding-left: 1vw;
+    position:sticky;
+    bottom: 0px;  
 }
 .button1 p{
-   
-   
-   background-color:#121212;
-   color:white;
-   font-size: 20px;
-   font-weight: bolder;
-   margin-left: 1%;
-   
-   border: 1px solid #121212;
-   
-   padding-left: 8px;
-   
+        
+        
+    background-color:#2a2a2c;
+    color:white;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 25px;
+    margin-top: 30px; 
+    border: 1px solid #121212;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    
+    
 }
 .button1 h3{
-   border:1px solid black;
-   padding-left:8px;
-   padding-right: 8px;
-   padding-top: 2px;
-   padding-bottom: 2px;
-   border-radius: 8px;
-   font-weight: bold;
-   font-size: 20px;
-   
-   background-color: orangered;
-   color:white;
-   margin-left:70%;
-   margin-right: 2%;
+    border:1px solid black;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    font-weight:lighter;
+    font-size: 15px;
+    background-color: orangered;
+    color:white;
+    margin-left:auto;
+    margin-right: 25px;
+    margin-top: 30px; 
+    
+    
+
+    
+}
    
 
-   
 } 
-} 
-@media (min-width:200px) and (max-width:270px){
+@media (min-width:240px) and (max-width:270px){
      
     body{
    margin:0;
@@ -961,6 +1148,29 @@ body{
    margin-top:4%;
    
    
+}
+.box{
+    background-color: black;
+}
+#head{
+    display: flex;
+}
+#head P{
+    padding-left: 40%;
+    font-size: 12px;
+    padding-top: 12px;
+    color: #5a5a5e;
+}
+#head h4{
+        font-size: 12px;
+        font-weight: lighter;
+        color: #5a5a5e;
+}
+#head h5{
+    font-size: 11px;
+        font-weight: lighter;
+        padding-top: 5px;
+        padding-left: 2px;
 }
 .box h4{
    padding-top: 2%;
@@ -1013,7 +1223,8 @@ body{
 .box2 h5{
    text-align: left;
    padding-left:10px;
-   font-size: 15px;
+   font-weight: lighter;
+        font-size: 16px;
 }
 .box3{
    text-align: left;
@@ -1054,51 +1265,55 @@ body{
 }
 
 .button1{
-   display: flex;
-   background-color: #121212;  
-   margin-top:44vh;
-   /* margin-top:16.5vh;  */
+    display: flex;
+    background-color: #121212; 
+    margin-top:32vh; 
     margin-right: -5.8vw;
-    margin-left: -5.8vw;
-   
-   padding-right: 55%;
-   position:sticky;
-   bottom: 0px;  
+    margin-left: -8vw;
+    padding-left: 1vw;
+    position:sticky;
+    bottom: 0px;  
 }
 .button1 p{
-   
-   
-   background-color:#121212;
-   color:white;
-   font-size: 20px;
-   font-weight: bolder;
-   margin-left: 1%;
-   
-   border: 1px solid #121212;
-   
-   padding-left: 8px;
-   
+        
+        
+    background-color:#2a2a2c;
+    color:white;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 25px;
+    margin-top: 30px; 
+    border: 1px solid #121212;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    
+    
 }
 .button1 h3{
-   border:1px solid black;
-   padding-left:8px;
-   padding-right: 8px;
-   padding-top: 2px;
-   padding-bottom: 2px;
-   border-radius: 8px;
-   font-weight: bold;
-   font-size: 20px;
-   
-   background-color: orangered;
-   color:white;
-   margin-left:70%;
-   margin-right: 2%;
-   
+    border:1px solid black;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    font-weight:lighter;
+    font-size: 15px;
+    background-color: orangered;
+    color:white;
+    margin-left:auto;
+    margin-right: 25px;
+    margin-top: 30px; 
+    
+    
 
-   
+    
+
 } 
 } 
-@media  (max-width:210px){
+@media  (max-width:240px){
      
     body{
    margin:0;
@@ -1120,6 +1335,9 @@ body{
    margin-top:4%;
    
    
+}
+.box{
+    background-color: black;
 }
 .box h4{
    padding-top: 2%;
@@ -1172,7 +1390,8 @@ body{
 .box2 h5{
    text-align: left;
    padding-left:10px;
-   font-size: 15px;
+   font-weight: lighter;
+   font-size: 16px;
 }
 .box3{
    text-align: left;
@@ -1211,49 +1430,74 @@ body{
 .container img{
    width: 70%;
 }
-
-.button1{
-   display: flex;
-   background-color: #121212;  
-   margin-top:44vh;
-   /* margin-top:16.5vh;  */
-    margin-right: -5.8vw;
-    margin-left: -5.8vw;
-   
-   padding-right: 95%;
-   position:sticky;
-   bottom: 0px;  
+#head{
+    display: flex;
+}
+#head P{
+    padding-left: 35%;
+    font-size: 12px;
+    padding-top: 12px;
+    color: #5a5a5e;
+}
+#head h4{
+        font-size: 12px;
+        font-weight: lighter;
+        color: #5a5a5e;
+}
+#head h5{
+    font-size: 11px;
+        font-weight: lighter;
+        padding-top: 4px;
+        padding-left: 2px;
 }
 .button1 p{
-   
-   
-   background-color:#121212;
-   color:white;
-   font-size: 20px;
-   font-weight: bolder;
-   margin-left: 30%;
-   
-   border: 1px solid #121212;
-   
-   padding-left: 8px;
-   
+        
+        
+    background-color:#2a2a2c;
+    color:white;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 40px;
+    margin-top: 30px; 
+    margin-right: 40px;
+    border: 1px solid #121212;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    
+    
 }
 .button1 h3{
-   border:1px solid black;
-   padding-left:8px;
-   padding-right: 8px;
-   padding-top: 2px;
-   padding-bottom: 2px;
-   border-radius: 8px;
-   font-weight: bold;
-   font-size: 20px;
-   
-   background-color: orangered;
-   color:white;
-   margin-left:70%;
-   margin-right: 2%;
-   
+    border:1px solid black;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    font-weight:lighter;
+    font-size: 15px;
+    background-color: orangered;
+    color:white;
+    margin-left:40px;
+    margin-right: 40px;
+    margin-top: 30px; 
+    
+    
 
-   
-} 
+    
+}
+.button1{
+    display:inline-block;
+    background-color:#121212; 
+    margin-top:16.5vh; 
+    
+    padding-left: 1vw;
+    width: 130%;
+    margin-left: -10vw;
+    
+    position:sticky;
+    bottom: 0px;  
+}
 } 

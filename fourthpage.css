@@ -44,7 +44,7 @@ body{
 }
 .box{
     background-color: #121212;
-    height: 550px;
+    height: 570px;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 2%;
@@ -102,9 +102,29 @@ body{
 }
   
 .container img{
-    width: 20%;
+    width: 18%;
+    padding-bottom: 10px;
 }
-
+#head{
+    display: flex;
+}
+#head P{
+    padding-left: 67%;
+    font-size: 12px;
+    padding-top: 12px;
+    color: #5a5a5e;
+}
+#head h4{
+        font-size: 12px;
+        font-weight: lighter;
+        color: #5a5a5e;
+}
+#head h5{
+    font-size: 11px;
+        font-weight: lighter;
+        padding-top: 11px;
+        padding-left: 2px;
+}
 .button1{
     display: flex;
    
@@ -115,25 +135,25 @@ body{
     
     
     background-color:#121212;
-    color:white;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-left: 1%;
-    
+    color:#5a5a5e;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 2%;
+   margin-top: 30px; 
     border: 1px solid #121212;
-    
+ 
     padding-left: 8px;
     
 }
 .button1 h3{
     border:1px solid black;
-    padding-left:3%;
-    padding-right: 3%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding-left:5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     border-radius: 8px;
-    font-weight: bold;
-    font-size: 20px;
+    font-weight:lighter;
+    font-size: 15px;
     background-color: orangered;
     color:white;
     margin-left:70%;
@@ -142,6 +162,8 @@ body{
 
     
 }
+
+
 
  @media (min-width:835px) and (max-width:1536px){
     body{
@@ -163,7 +185,7 @@ body{
         background-color:black;
         
         width: 700px;  
-        margin-top:85px;
+        margin-top:70px;
         margin-bottom: 10px;
         
         
@@ -171,15 +193,18 @@ body{
     .box h4{
         padding-top: 2%;
        font-size: 10px;
+    
        
     }
     .box h2{
         margin-top: 5px;
+        font-weight: lighter;
     }
     .box h6{
         margin-top:-15px ;
-        font-size: 13px;
+        font-size: 14px;
         color: rgb(165, 158, 158);
+        font-weight: lighter;
     }
     .box h4{
        padding-left: 2%;
@@ -192,11 +217,31 @@ body{
         
         padding-left: 2%;
         padding-right: 2%;
-        padding-bottom: 2%;
+        padding-bottom: 6%;
         
         border-radius: 10px;
         
         
+    }
+    #head{
+        display: flex;
+    }
+    #head P{
+        padding-left: 67%;
+        font-size: 12px;
+        padding-top: 12px;
+        color: #5a5a5e;
+    }
+    #head h4{
+            font-size: 12px;
+            font-weight: lighter;
+            color: #5a5a5e;
+    }
+    #head h5{
+        font-size: 11px;
+            font-weight: lighter;
+            padding-top: 11px;
+            padding-left: 2px;
     }
     
     
@@ -212,10 +257,10 @@ body{
     }
     .box3{
         display:flex;
-       
-       
+
     
     }
+
     .box3 label{
         margin-left: -54%;
     }
@@ -247,7 +292,8 @@ body{
     }
       
     .container img{
-        width: 20%;
+        width: 18%;
+        padding-bottom: 10px;
     }
     
     .button1{
@@ -260,25 +306,25 @@ body{
         
         
         background-color:#121212;
-        color:white;
-        font-size: 20px;
-        font-weight: bolder;
-        margin-left: 1%;
-        
+        color:#5a5a5e;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 2%;
+       margin-top: 30px; 
         border: 1px solid #121212;
-        
+     
         padding-left: 8px;
         
     }
     .button1 h3{
         border:1px solid black;
-        padding-left:3%;
-        padding-right: 3%;
-        padding-top: 0.5%;
-        padding-bottom: 0.5%;
+        padding-left:5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
         border-radius: 8px;
-        font-weight: bold;
-        font-size: 20px;
+        font-weight:lighter;
+        font-size: 15px;
         background-color: orangered;
         color:white;
         margin-left:70%;
@@ -288,7 +334,7 @@ body{
         
     }
 }
-@media (min-width:600px) and (max-width:835px){
+@media (min-width:612px) and (max-width:835px){
 
     body{
     margin:0;
@@ -316,6 +362,26 @@ body{
    font-size: 10px;
    
 }
+#head{
+    display: flex;
+}
+#head P{
+    padding-left: 67%;
+    font-size: 12px;
+    padding-top: 12px;
+    color: #5a5a5e;
+}
+#head h4{
+        font-size: 12px;
+        font-weight: lighter;
+        color: #5a5a5e;
+}
+#head h5{
+    font-size: 11px;
+        font-weight: lighter;
+        padding-top: 11px;
+        padding-left: 2px;
+}
 
 .box h2{
     margin-top: 5px;
@@ -342,7 +408,10 @@ body{
    
     width: 100%;
 }
-
+.box {
+    background-color: black;
+    padding-left: 20px;
+}
 
 
 .box3 input{
@@ -357,6 +426,7 @@ body{
     padding-top: 2%;
     border-radius:10px;
     background-color: #121212;
+    padding-bottom: 2%;
 }
 .box3{
     text-align: left;
@@ -402,45 +472,51 @@ body{
     background-color: #121212; 
     margin-top:16.5vh; 
     margin-right: -5.8vw;
-    margin-left: -5.8vw;
+    margin-left: -8vw;
     padding-left: 1vw;
     position:sticky;
     bottom: 0px;  
 }
 .button1 p{
-    
-    
-    background-color:#121212;
+        
+        
+    background-color:#2a2a2c;
     color:white;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-left: 1%;
-    
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 25px;
+    margin-top: 30px; 
     border: 1px solid #121212;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
     
-    padding-left: 8px;
     
 }
 .button1 h3{
     border:1px solid black;
-    padding-left:3%;
-    padding-right: 3%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-radius: 8px;
-    font-weight: bold;
-    font-size: 20px;
-    
+    font-weight:lighter;
+    font-size: 15px;
     background-color: orangered;
     color:white;
-    margin-left:70%;
-    margin-right: 2%;
+    margin-left:auto;
+    margin-right: 25px;
+    margin-top: 30px; 
+    
     
 
     
- } 
 }
-@media (min-width:350px) and (max-width:600px){
+
+}
+@media (min-width:350px) and (max-width:612px){
     body{
         margin:0;
         padding:0;
@@ -461,6 +537,26 @@ body{
         margin-top:4%;
         
         
+    }
+    #head{
+        display: flex;
+    }
+    #head P{
+        padding-left: 60%;
+        font-size: 12px;
+        padding-top: 12px;
+        color: #5a5a5e;
+    }
+    #head h4{
+            font-size: 12px;
+            font-weight: lighter;
+            color: #5a5a5e;
+    }
+    #head h5{
+        font-size: 11px;
+            font-weight: lighter;
+            padding-top: 8px;
+            padding-left: 2px;
     }
     .box h4{
         padding-top: 2%;
@@ -550,53 +646,57 @@ body{
     }
       
     .container img{
-        width: 35%;
-    }
-    
-    .button1{
-        display: flex;
-        background-color: #121212; 
-        margin-top:16.5vh; 
-        margin-right: -5.8vw;
-        margin-left: -5.8vw;
-        width:86vw;
-        padding-left: 1vw;
-        padding-right: 5rem;
-        position:sticky;
-        bottom: 0px;  
+        width: 30%;
     }
     .button1 p{
         
         
-        background-color:#121212;
+        background-color:#2a2a2c;
         color:white;
-        font-size: 20px;
-        font-weight: bolder;
-        margin-left: 1%;
-        
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 25px;
+        margin-top: 30px; 
         border: 1px solid #121212;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
         
-        padding-left: 8px;
         
     }
     .button1 h3{
         border:1px solid black;
-        padding-left:3%;
-        padding-right: 3%;
-        padding-top: 0.5%;
-        padding-bottom: 0.5%;
+        padding-left:30px;
+        padding-right: 30px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         border-radius: 8px;
-        font-weight: bold;
-        font-size: 20px;
-        
-        background-color:orangered;
+        font-weight:lighter;
+        font-size: 15px;
+        background-color: orangered;
         color:white;
-        margin-left:70%;
-        margin-right: 2%;
+        margin-left:auto;
+        margin-right: 25px;
+        margin-top: 30px; 
+        
         
     
         
-     }
+    }
+    .button1{
+        display: flex;
+        background-color: #121212; 
+        margin-top:16.5vh; 
+        margin-right: -9vw;
+        margin-left: -8vw;
+        padding-left: 1vw;
+        
+        position:sticky;
+        bottom: 0px;  
+    }
+    
 }
 @media  (max-width:350px){
     body{
@@ -619,6 +719,26 @@ body{
         margin-top:4%;
         
         
+    }
+    #head{
+        display: flex;
+    }
+    #head P{
+        padding-left: 45%;
+        font-size: 12px;
+        padding-top: 12px;
+        color: #5a5a5e;
+    }
+    #head h4{
+            font-size: 12px;
+            font-weight: lighter;
+            color: #5a5a5e;
+    }
+    #head h5{
+        font-size: 11px;
+            font-weight: lighter;
+            padding-top: 6px;
+            padding-left: 2px;
     }
     .box h4{
         padding-top: 2%;
@@ -711,49 +831,55 @@ body{
         width: 60%;
     }
     
-    .button1{
-        display: flex;
-        background-color: #121212; 
-        margin-top:16.5vh; 
-        margin-right:-7vw;
-        margin-left: -5.8vw;
-        width:100vw;
-        padding-left: 1vw;
-        padding-right: 15vw;
-        position:sticky;
-        bottom: 0px;  
-    }
     .button1 p{
         
         
-        background-color:#121212;
+        background-color:#2a2a2c;
         color:white;
-        font-size: 20px;
-        font-weight: bolder;
-        margin-left: 40px;
-        
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 25px;
+        margin-top: 30px; 
         border: 1px solid #121212;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
         
-        padding-left: 5px;
         
     }
     .button1 h3{
         border:1px solid black;
-        padding-left:8px;
-        padding-right: 8px;
-        padding-top: 2px;
-        padding-bottom: 2px;
+        padding-left:30px;
+        padding-right: 30px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         border-radius: 8px;
-        font-weight: bold;
-        font-size: 20px;
-       margin-left:120px;
+        font-weight:lighter;
+        font-size: 15px;
         background-color: orangered;
         color:white;
+        margin-left:auto;
+        margin-right: 25px;
+        margin-top: 30px; 
         
         
     
         
-     }
+    }
+    .button1{
+        display: flex;
+        background-color: #121212; 
+        margin-top:16.5vh; 
+        margin-right: -12vw;
+        margin-left: -8vw;
+        padding-left: 1vw;
+        
+        position:sticky;
+        bottom: 0px;  
+    }
+    
 }
     
        
@@ -779,6 +905,26 @@ body{
         margin-top:4%;
         
         
+    }
+    #head{
+        display: flex;
+    }
+    #head P{
+        padding-left: 30%;
+        font-size: 12px;
+        padding-top: 12px;
+        color: #5a5a5e;
+    }
+    #head h4{
+            font-size: 12px;
+            font-weight: lighter;
+            color: #5a5a5e;
+    }
+    #head h5{
+        font-size: 11px;
+            font-weight: lighter;
+            padding-top: 4px;
+            padding-left: 2px;
     }
     .box h4{
         padding-top: 2%;
@@ -870,52 +1016,62 @@ body{
     .container img{
         width: 70%;
     }
-    
-    .button1{
-        display: flex;
-        background-color: #121212; 
-        margin-top:16.5vh; 
-        margin-right:-3vw;
-        margin-left: -5.8vw;
-        width:100vw;
-        padding-left: 1vw;
-        padding-right: 15vw;
-        position:sticky;
-        bottom: 0px;  
-    }
     .button1 p{
         
         
-        background-color:#121212;
+        background-color:#2a2a2c;
         color:white;
-        font-size: 20px;
-        font-weight: bolder;
-        margin-left: 40px;
-        
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 25px;
+        margin-top: 30px; 
         border: 1px solid #121212;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
         
-        padding-left: 5px;
         
     }
     .button1 h3{
         border:1px solid black;
-        padding-left:8px;
-        padding-right: 8px;
-        padding-top: 2px;
-        padding-bottom: 2px;
+        padding-left:30px;
+        padding-right: 30px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         border-radius: 8px;
-        font-weight: bold;
-        font-size: 20px;
-       margin-left:40px;
+        font-weight:lighter;
+        font-size: 15px;
         background-color: orangered;
         color:white;
+        margin-left:auto;
+        margin-right: 25px;
+        margin-top: 30px; 
         
         
     
         
-     }
+    }
+    .button1{
+        display: flex;
+        background-color: #121212; 
+        margin-top:16.5vh; 
+        margin-right: -15vw;
+        margin-left: -8vw;
+        padding-left: 1vw;
+        
+        position:sticky;
+        bottom: 0px;  
+    }
+    
+        
+        
+    
+        
+     
 }
-@media (max-width:190px){
+@media (max-width:215px){
     body{
         margin:0;
         padding:0;
@@ -1027,50 +1183,76 @@ body{
     .container img{
         width: 70%;
     }
-    
-    .button1{
+    #head{
         display: flex;
-        background-color: #121212; 
-        margin-top:16.5vh; 
-        margin-right:-3vw;
-        margin-left: -5.8vw;
-        width:100vw;
-        padding-left: 1vw;
-        padding-right: 40%;
-        position:sticky;
-        bottom: 0px;  
+    }
+    #head P{
+        padding-left: 10%;
+        font-size: 12px;
+        padding-top: 12px;
+        color: #5a5a5e;
+    }
+    #head h4{
+            font-size: 12px;
+            font-weight: lighter;
+            color: #5a5a5e;
+    }
+    #head h5{
+        font-size: 11px;
+            font-weight: lighter;
+            padding-top: 2px;
+            padding-left: 2px;
     }
     .button1 p{
         
         
-        background-color:#121212;
+        background-color:#2a2a2c;
         color:white;
-        font-size: 20px;
-        font-weight: bolder;
+        font-size: 15px;
+        font-weight: lighter;
         margin-left: 40px;
-        
+        margin-top: 30px; 
+        margin-right: 40px;
         border: 1px solid #121212;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 8px;
         
-        padding-left: 5px;
         
     }
     .button1 h3{
         border:1px solid black;
-        padding-left:8px;
-        padding-right: 8px;
-        padding-top: 2px;
-        padding-bottom: 2px;
+        padding-left:30px;
+        padding-right: 30px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         border-radius: 8px;
-        font-weight: bold;
-        font-size: 20px;
-       margin-left:40px;
+        font-weight:lighter;
+        font-size: 15px;
         background-color: orangered;
         color:white;
+        margin-left:40px;
+        margin-right: 40px;
+        margin-top: 30px; 
         
         
     
         
-     }
+    }
+    .button1{
+        display:inline-block;
+        background-color:#121212; 
+        margin-top:16.5vh; 
+        
+        padding-left: 1vw;
+        width: 130%;
+        
+        position:sticky;
+        bottom: 0px;  
+    }
+    
 }
     
        
