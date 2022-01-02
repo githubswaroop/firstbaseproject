@@ -1,4 +1,3 @@
-
 body{
     margin:0;
     padding:0;
@@ -22,6 +21,10 @@ body{
     margin-bottom: 10px;
     
     
+}
+.box3 input{
+    color:white;
+    padding-left: 5px;
 }
 .box h4{
     padding-top: 2%;
@@ -73,9 +76,15 @@ body{
    
 
 }
-.box3 label{
-    margin-left: -54%;
-}
+.box3 form{
+    text-align:left;
+   
+  }
+ .box3 label{
+     margin-left: 8%;
+     
+     
+ }
 #span{
     color: red;
 }
@@ -116,6 +125,7 @@ body{
     padding-top: 12px;
     color: #5a5a5e;
 }
+
 #head h4{
         font-size: 12px;
         font-weight: lighter;
@@ -130,7 +140,7 @@ body{
 .button1{
     display: flex;
    
-    margin-top: 7%;  
+    margin-top: 20%;  
    
 }
 .button1 p{
@@ -202,6 +212,7 @@ body{
         margin-top: 5px;
         font-weight: lighter;
     }
+   
     .box h6{
         margin-top:-15px ;
         font-size: 14px;
@@ -216,7 +227,7 @@ body{
     }
     .box{
         background-color: #121212;
-        
+        height: 550px;
         padding-left: 2%;
         padding-right: 2%;
         padding-bottom: 6%;
@@ -262,9 +273,14 @@ body{
 
     
     }
-
+     .box3 form{
+       text-align:left;
+      
+     }
     .box3 label{
-        margin-left: -54%;
+        margin-left: 15px;
+        
+        
     }
     #span{
         color: red;
@@ -292,16 +308,17 @@ body{
     .box4 p{
         font-size: 13px;
     }
-      
+   
     .container img{
         width: 18%;
         padding-bottom: 10px;
     }
+   
     
     .button1{
         display: flex;
        
-        margin-top: 7%;  
+        margin-top: 20%;  
        
     }
     .button1 p{
